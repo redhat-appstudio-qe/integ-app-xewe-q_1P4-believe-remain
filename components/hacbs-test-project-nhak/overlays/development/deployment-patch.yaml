@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-nhak
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/integration1-kavs-tenant/integ-app-xewe/hacbs-test-project-nhak@sha256:28a756f7ddb653f62ece7cc1874271ec29daa728b3658468dd12301ff07806d1
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
